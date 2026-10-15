@@ -1,6 +1,6 @@
 import { headers } from "next/headers";
 import { auth } from "@/lib/auth";
-import { AgentChat } from "./agent-chat";
+import { CarWorkspace as AgentChat } from "./car-workspace";
 import { AccountControl, SignIn } from "./web-chat-auth";
 
 export async function AuthenticatedAgentChat({

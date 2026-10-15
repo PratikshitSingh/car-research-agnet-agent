@@ -1,5 +1,5 @@
 import { defineAgent } from "eve";
 
 export default defineAgent({
-  model: "stealth/cat-jam",
+  model: "openai/gpt-5-mini",
 });

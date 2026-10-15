@@ -20,8 +20,8 @@ const mono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "car-research-agnet",
-  description: "A Next.js starter for eve agents with AI Elements.",
+  title: "CarScout AI — Your next right car",
+  description: "Independent car-buying research. Discover real listings, compare trade-offs, and save your research with CarScout AI.",
 };
 
 // The page and Eve routes validate the generated app's Better Auth session.
