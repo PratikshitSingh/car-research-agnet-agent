@@ -33,3 +33,26 @@ eve deploy
 ```
 
 `eve deploy` links a Vercel project if needed and deploys the agent to production. See the [eve deployment documentation](https://eve.dev/docs/guides/deployment/vercel) for authentication, environment variables, and deployment options.
+
+## CarScout workspace
+
+The authenticated home and session pages open a responsive car-shopping workspace.
+Use the location, USD asking-price budget, radius, body style, and requirements form
+for research. Results stream from the existing agent; follow-up requests use the
+same durable session. The stop control cancels active research, and **New search**
+opens a fresh workspace. Existing session URLs continue to resume research.
+
+**Save report** stores the latest assistant report in this browser's local storage.
+Saved reports can be read or removed in **Saved research**. They do not sync across
+devices, are not an account-scoped database, and can be visible to other people
+using this browser profile. Clearing site storage removes them. Do not save
+sensitive information on a shared device. Saved prices/availability are not refreshed.
+
+The UI does not invent vehicle cards or infer structured inventory from model text.
+Reports retain the agent's citations, tool details, clarification questions, and
+source-access limitations. No new marketplace integration is included.
+
+Validation: `pnpm typecheck`. For preview acceptance, sign in, submit a location and
+budget, check that the report streams, send a follow-up, save the completed report,
+verify it remains after refresh, remove it, and open an existing session URL.
+Check the layout at desktop and mobile widths and use keyboard navigation.
